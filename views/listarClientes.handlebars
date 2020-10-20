@@ -1,0 +1,20 @@
+<h4>Lista de Clientes</h4>
+<table class="table">
+  <thead class="thead-light">
+    <th>Nombre</th>
+    <th>Apellido</th>
+    <th>Saldo</th>
+  </thead>
+  <tbody>
+    {{#each clientes}}
+    <tr>
+      <td scope="col">{{this.nombre}}</td>
+      <td scope="col">{{this.apellido}}</td>
+      <td scope="col">{{this.saldo}}</td>
+    </tr>
+    {{/each}}
+  </tbody>
+</table>
+<script>
+  console.log("El Servidor nos mandó la lista de clientes");
+</script>

@@ -1,0 +1,47 @@
+<h5 class="explicacion">
+  En esta re version del ejercicio bancario buscamos mostrar como sumamos el uso del SERVIDOR, 
+  el cual, se encargará de resolver todas las peticiones del cliente. En este caso renderizando páginas que ya contengan la 
+  información que el cliente requiere.
+</h5>
+<h5 class="explicacion"> 
+  Podrán apreciar que el uso de DOM desapareció, pero todas las funciones que antes ejecutabamos en el cliente ahora se ejecutan en el servidor.
+</h5>
+<h5 class="explicacion">
+  Tengo que cambiar muy pocas cosas! Cambiar pocas pero agregar varias... &#128517;
+</h5>
+
+<br>
+<h3>Botones de acción</h3><br>
+<div id="botones" class="btn-group btn-group-lg d-flex justify-content-center">
+  <form action="/obtenerMayor" method="POST" class="d-flex justify-content-center">
+    <button class="btn btn-outline-primary" name="obtenerMayor">Obtener mayor</button>
+  </form>
+
+
+  <form action="/obtenerMenor" id="grego" method="POST" class="d-flex justify-content-center">
+    <button type="button" class="btn btn-outline-primary" name="obtenerMenor" onclick="funconfirm()">Obtener menor</button>
+  </form>
+
+
+
+  <form action="/listarClientes" method="POST" class="d-flex justify-content-center">
+    <button class="btn btn-outline-primary" name="listarClientes">Listar clientes</button>
+  </form>
+  <form action="/listarMorosos" method="POST" class="d-flex justify-content-center">
+    <button class="btn btn-outline-primary" name="listarMorosos">Listar morosos</button>
+  </form>
+  <form action="/signin" method="POST" class="d-flex justify-content-center">
+    <button class="btn btn-outline-primary" name="agregarClientes">Añadir Cliente</button>
+  </form>
+</div>
+<div id="buscarCliente">
+    <h3>Buscar cliente</h3><br>
+    <form action="/buscar" method="POST">
+        <label>Buscar por nombre: </label>
+        <div class="d-flex justify-content-center">
+          <input type="text" id="nombreBuscar" name="nombreBuscar">
+          <button class="btn btn-primary">Buscar cliente</button>
+        </div>
+    </form>
+</div>
+</br>
